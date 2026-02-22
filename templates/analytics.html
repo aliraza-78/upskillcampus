@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+</head>
+<body>
+    <h2>URL Analytics</h2>
+    <table border="1">
+        <tr>
+            <th>Original URL</th>
+            <th>Short Code</th>
+            <th>Clicks</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>
